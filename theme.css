@@ -164,6 +164,13 @@
     padding-left: 70px;
 }
 
+.toolbar {
+    background-color: var(--b3-theme-background-light);
+    box-sizing: border-box;
+    height: 36px;
+    padding-left: 0 px;
+}
+
 .toolbar__item {
     cursor: pointer;
     color: var(--b3-theme-on-surface);
@@ -285,8 +292,9 @@ body {
 .block__icon svg {
     height: 21px;
     width: 21px;
-    padding: 12px 6px;
+    /* padding: 12px 6px; */
     display: flex;
+    align-items: center;
 }
 
 .b3-list-item__text {
@@ -435,4 +443,9 @@ body {
     margin-left: 8px;
     flex-shrink: 0;
     color: var(--b3-theme-on-surface);
+}
+
+element.style {
+    width: 302px;
+    transition: var(--b3-width-transition);
 }
